@@ -1,0 +1,93 @@
+.gallery {
+    background-image: linear-gradient(to bottom, var(--second-bg-color) 29%, var(--white) 29%);
+
+    @include tablet {
+        background-image: linear-gradient(to bottom, var(--second-bg-color) 56%, var(--white) 56%);
+    }
+
+    @include desktop {
+        background-image: linear-gradient(to bottom, var(--second-bg-color) 27%, var(--white) 27%);
+    }
+}
+
+.gl-container {
+    width: 100%;
+    padding: 30px 2px;
+    margin: 0 auto;
+    
+    @include desktop {
+        padding-top: 32px;
+    }
+    
+    @include desktop {
+        padding: 60px 94px;
+        max-width: 1200px;
+    }    
+}
+
+
+
+.gl__pictures {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr;
+    grid-gap: 2.54px;
+
+    @include tablet {
+        grid-gap: 6px;            
+    }
+    
+    @include desktop {
+        grid-gap: 8px;
+    }   
+}
+
+.gallery__img {
+    display: block;
+    width: 100%;
+
+    &:not(:last-child) {
+        margin-bottom: 2.54px;
+
+        @include tablet {
+            margin-bottom: 6px;            
+        }
+
+        @include desktop {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.border {
+    border-radius: 8px;
+    border: transparent;
+
+    @include tablet {
+        border-radius: 20px;
+    }    
+}
+
+.pic5 {
+    width: 50%;
+}
+
+.first-column {
+    margin-top: 100%;
+}
+
+.second-column {
+    margin-top: 59%;
+}
+
+.fourth-column {
+    margin-top: 70%;
+}
+
+.fifth-column {
+    margin-top: 44%;
+}
+
+.sixth-column {
+    margin-top: 105%;
+}

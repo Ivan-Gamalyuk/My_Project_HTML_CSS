@@ -1,0 +1,187 @@
+<header class="page-header">
+  <div class="container"> 
+    <nav class="header-nav">
+      <a href="index.html" class="header-logo">
+        <svg class="header-logo-icon" width="199" height="50">
+          <use href="./images/image.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <div class="header-wrap">
+       <ul class="header-menu-list">
+        <li class="header-menu-item">
+          <a href="#hero-id" class="header-menu-link">Home</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="#advantages-id" class="header-menu-link">About us</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="#about-id" class="header-menu-link">How it's made?</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="#products-scroll" class="header-menu-link">Our products</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="#contacts-id" class="header-menu-link">Contact</a>
+        </li>
+      </ul> 
+      </div>
+
+      <button type="button" class="header-mobile-menu">
+        <svg class="header-mobile-button" width="20" height="12">
+          <use href="./images/image.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <button type="button" class="mob-btn-buy">
+        Buy now 
+        <svg class="button-buy-icon" width="5" height="8">
+          <use href="./images/image.svg#icon-button-buy"></use>
+        </svg>
+      </button>
+    </nav>
+    <div class="mobile-menu is-hidden">
+      <button type="button" class="mobile-close-button">
+        <svg class="mobile-button-icon" width="14" height="14">
+          <use href="./images/image.svg#icon-close"></use>
+        </svg>
+      </button>
+      <button class="mobile-button-buy">
+        Buy now
+        <svg class="button-buy-icon" width="5" height="8">
+          <use href="./images/image.svg#icon-button-buy"></use>
+        </svg>
+      </button>
+      <ul class="header-mob-list">
+        <li class="header-mob-item">
+          <a href="#hero-id" class="mob-menu__link">Home</a>
+        </li>
+        <li class="header-mob-item">
+          <a href="#advantages-id" class="mob-menu__link ">About us</a>
+        </li>
+        <li class="header-mob-item">
+          <a href="#about-id" class="mob-menu__link ">How it's made?</a>
+        </li>
+        <li class="header-mob-item">
+          <a href="#products-scroll" class="mob-menu__link ">Our products</a>
+        </li>
+        <li class="header-mob-item">
+          <a href="#contacts-id" class="mob-menu__link ">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </header>
+  <section class="hero" id="hero-id">
+    <div class="hero__container container">
+      <div class="hero__title-wrap">
+        <h1 class="hero__title hero__title-animation">
+          <span class="hero__pretitle">ice cream made with </span>
+          passion
+        </h1>
+        <ul class="hero__list list" id="hero-list">
+          <li class="hero__item" id="products">
+              <a href="#products-scroll" class="hero__btn-link">Products</a>
+          </li>
+          <li class="hero__item" id="about">
+              <a href="#about-id" class="hero__btn-link">How it’s made?</a>
+          </li>
+        </ul>
+      </div>
+      <div class="circle"></div>
+      <div class="hero__img-wrap" data-aos="fade-up" data-aos-duration="2000">
+        <picture>
+          <source
+            srcset="
+              ../src/images/hero-icecream-mob.png    1x,
+              ../src/images/hero-icecream-mob-x2.png 2x
+            "
+            media="(min-width: 320px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ../src/images/hero-icecream-tab.png    1x,
+              ../src/images/hero-icecream-tab-x2.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ../src/images/hero-icecream-dt.png    1x,
+              ../src/images/hero-icecream-dt-x2.png 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
+          <img
+            src="../src/images/hero-icecream-mob.png"
+            alt="ice-cream"
+            class="hero__img"
+          />
+        </picture>
+      </div>
+      <div class="hero__legend-wrap">
+        <p class="hero__legend">Do you think about the composition of our ice cream?
+Don’t care about it. 
+ICECREAM use only 100% organic milk for produced our product.</p>
+        <div class="hero__legend-btn"><a href="https://youtu.be/hWtNeat9CIk" target="_blank">
+          <svg class="hero__legend-icon"width="7" height="7"><use href="./images/image.svg#icon-arrow"></use></svg></a>
+        </div>
+      </div>
+      <div class="hero__milk-img-wrap">
+        <picture>
+          <source
+            srcset="
+              ../src/images/hero-milk-tab.png    1x,
+              ../src/images/hero-milk-tab-x2.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+           <source
+            srcset="
+              ../src/images/hero-milk-dt.png    1x,
+              ../src/images/hero-milk-dt-x2.png 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
+          <img
+            src="../src/images/hero-milk-tab.png"
+            alt="eco-milk"
+            class="hero__img"
+          />
+        </picture>
+      </div>
+        <ul class="hero__counter-list">
+          <li class="hero__counter-item"><div class="hero__mini-circle"></div><h2 class="hero__couner-title">16</h2><p class="hero__counter-text">cafes</p></li>
+          <li class="hero__counter-item"><div class="hero__mini-circle"></div><h2 class="hero__couner-title">23</h2><p class="hero__counter-text">food trucks</p></li>
+        </ul>
+      <div class="hero__tasty-img-wrap" data-aos="fade-left" data-aos-duration="2,l000">
+        <picture>
+          <source
+            srcset="
+              ../src/images/hero-tasty-tab.png    1x,
+              ../src/images/hero-tasty-tab-x2.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ../src/images/hero-tasty-dt.png    1x,
+              ../src/images/hero-tasty-dt-x2.png 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
+          <img
+            src="../src/images/hero-tasty-tab.png"
+            alt="so tasty"
+            class="hero__img"
+          />
+        </picture>
+      </div>
+      </div>
+  </section>
+
